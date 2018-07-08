@@ -3,9 +3,17 @@
     height: 100%;
 }
 
+.nameplate {
+    color: white;
+    background-color: #4aaaa5;
+    text-align: center;
+    line-height: 2;
+}
+
 .text-size {
     font-size:  12pt;
     font-weight: bold;
+    word-wrap: initial;
 }
 
 .cbackground {
