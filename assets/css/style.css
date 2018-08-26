@@ -1,6 +1,12 @@
 .bgi {
+    z-index: 2;
     background-image: url("../images/bodybackground.png");
     height: 100%;
+    text-align: center;
+    padding-top: 2%
+}
+.navbar {
+    z-index: 1;
 }
 
 .nameplate {
@@ -9,19 +15,28 @@
     text-align: center;
     line-height: 2;
 }
-
+.carousel-item {
+    text-align: center;
+}
+#ginfo {
+    margin-bottom: 3%;
+}
 .text-size {
     font-size:  12pt;
     font-weight: bold;
     word-wrap: initial;
 }
+#empty:empty{
+    background-color: lightcoral;
+}
 
 .cbackground {
     background-color: white;
-    height: 860px;
+    height: auto;
 }
 
 .footer{
+    z-index: 1;
     position: fixed;
     left: 0%;
     right: 0%;
@@ -37,4 +52,36 @@
     margin-left: auto;
     margin-right: auto;
     width: 3%;
+}
+.citemh {
+    font-size: 20pt;
+    font-weight: bolder;
+    width: auto;
+    color: black;
+    text-shadow: 2px 2px white;
+}
+.citemp {
+    font-size: 16pt;
+    font-weight: bolder;
+    word-wrap: initial;
+    color: black;
+    text-shadow: 2px 2px white;
+}
+@media screen and (max-width: 600px){
+    #indexp1 {
+        word-wrap: normal;
+    }
+    .cbackground {
+        margin-bottom: 10%;
+    }
+    .bgi {
+        background-attachment: scroll;
+    }
+    .gimage{
+        height: auto;
+    }
+    #ginfo{
+        width: auto;
+        margin: auto;
+    }
 }
