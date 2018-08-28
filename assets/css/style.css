@@ -1,3 +1,6 @@
+body, html{
+    height: 100%;;
+}
 .bgi {
     z-index: 2;
     background-image: url("../images/bodybackground.png");
@@ -7,6 +10,10 @@
 }
 .navbar {
     z-index: 1;
+}
+
+.lead {
+    text-align: left;
 }
 
 .nameplate {
@@ -65,19 +72,27 @@
     background-image: url("../images/carousel-background.jpg");
     text-align: center;
 }
+.carousel-caption{
+    max-width: 50%;
+    margin: auto;
+}
 .citemh {
-    font-size: 20pt;
+    font-size: 24pt;
     font-weight: bolder;
     width: auto;
-    color: black;
-    text-shadow: 2px 2px white;
+    color: white;
+    text-shadow: 2px 2px black;
 }
 .citemp {
-    font-size: 16pt;
+    font-size: 18pt;
     font-weight: bolder;
     word-wrap: initial;
-    color: black;
-    text-shadow: 2px 2px white;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.gimage{
+    vertical-align: middle;
 }
 @media screen and (max-width: 768px){
     #indexp1 {
@@ -93,17 +108,28 @@
         background-attachment: scroll;
     }
     .carousel {
-        max-width: 80%;
+        max-width: 85%;
         height: 280px;
     }
     .gimage{
-        margin-top: 8%;
+        margin-top: 2%;
         height: auto;
         width: auto;
-        max-height: 240px;
+        max-width: 240px;
     }
     #ginfo{
         width: auto;
         margin: auto;
+    }
+    .carousel-caption{
+        display: inherit!important;
+    }
+    .citemh {
+        font-size: 14pt;
+        margin-top: 4%;
+        text-align: center;
+    }
+    .citemp{
+        display: none;
     }
 }
