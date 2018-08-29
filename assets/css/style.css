@@ -2,9 +2,10 @@ body, html{
     height: 100%;;
 }
 .bgi {
-    z-index: 2;
+    z-index: 1;
     background-image: url("../images/bodybackground.png");
-    height: 100%;
+    height: 90%;
+    max-height: 90%;
     text-align: center;
     padding-top: 2%
 }
@@ -48,12 +49,11 @@ body, html{
 }
 
 .footer{
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     left: 0%;
     right: 0%;
     bottom: 0%;
-    padding: 15px 0px 15px 0px;
     border-top: 10px solid #4aaaa5;
     background-color: #666666;
 }
@@ -67,12 +67,14 @@ body, html{
 }
 .carousel{
     margin: auto;
+    min-height: 50%;
     max-height: 60%;
     max-width: 60%;
     background-image: url("../images/carousel-background.jpg");
     text-align: center;
 }
 .carousel-caption{
+    padding-top: 5%;
     max-width: 50%;
     margin: auto;
 }
@@ -93,6 +95,8 @@ body, html{
 
 .gimage{
     vertical-align: middle;
+    min-height: 320px;
+    max-height: 360px;
 }
 @media screen and (max-width: 768px){
     #indexp1 {
@@ -106,6 +110,7 @@ body, html{
     }
     .bgi {
         background-attachment: scroll;
+        height: auto;
     }
     .carousel {
         max-width: 85%;
@@ -116,6 +121,7 @@ body, html{
         height: auto;
         width: auto;
         max-width: 240px;
+        min-height: 160px;
     }
     #ginfo{
         width: auto;

@@ -40,4 +40,11 @@ var config = {
                 window.open(url,"_blank");
             }
       });
+      $(".citemh").on("click", function(event){
+        var url = $(event.target).attr("data");
+        console.log(url);
+        if(url != "undefined"){
+            window.open(url,"_blank");
+        }
+  });
   }
